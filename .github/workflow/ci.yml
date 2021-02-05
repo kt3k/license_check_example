@@ -1,0 +1,8 @@
+name: ci
+on: push
+jobs:
+  lcheck:
+    runs-on: linux-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: kt3k/license_checker@v1.0.3
